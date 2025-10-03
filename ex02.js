@@ -4,8 +4,6 @@ const _ = require('lodash');
 
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8];
 
-const evens = _(numbers)
-.filter((num) => num % 2 === 0)
-.value()
+const evens = _.filter((num) => num % 2 === 0)
 
 console.log(evens); // Expected output: [2, 4, 6, 8]
